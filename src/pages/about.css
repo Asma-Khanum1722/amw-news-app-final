@@ -1,0 +1,174 @@
+/* ===== ABOUT SECTION ===== */
+.about-section {
+  background: linear-gradient(180deg, #fffbf5 0%, #fff8f0 100%);
+  padding: 120px 24px;
+}
+
+.about-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.section-tag {
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: #00bcd4;
+  margin-bottom: 16px;
+}
+
+.about-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(32px, 5vw, 48px);
+  font-weight: 300;
+  color: #1a1a1a;
+  margin: 0 0 24px 0;
+  letter-spacing: -1px;
+}
+
+.about-intro {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #666;
+  line-height: 1.8;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-bottom: 60px;
+}
+
+.about-card {
+  background: #fff;
+  padding: 40px 32px;
+  border-radius: 4px;
+  border: 1px solid rgba(0,0,0,0.06);
+  transition: all 0.3s ease;
+}
+
+.about-card:hover {
+  background: rgba(0,0,0,0.02);
+  border-color: rgba(245, 158, 11, 0.4);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+  transform: translateY(-4px);
+}
+
+.about-card-label {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #00bcd4;
+  margin-bottom: 16px;
+}
+
+.about-card p {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #555;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.about-team {
+  text-align: center;
+  padding-top: 40px;
+  border-top: 1px solid rgba(0,0,0,0.08);
+}
+
+.team-list {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 32px;
+  flex-wrap: wrap;
+}
+
+.team-quote {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  color: #888;
+  margin: 16px auto 0 auto;
+  max-width: 500px;
+  text-align: center;
+}
+
+.team-member {
+  text-align: center;
+}
+
+.member-name {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 4px;
+}
+
+.member-role {
+  display: block;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #888;
+}
+
+.member-note {
+  display: block;
+  font-family: "Poppins", sans-serif;
+  font-size: 11px;
+  font-style: italic;
+  color: #bbb;
+  margin-top: 4px;
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 60px 20px;
+  }
+  
+  .about-title {
+    font-size: 28px;
+  }
+  
+  .about-intro {
+    font-size: 14px;
+  }
+  
+  .about-grid {
+    gap: 16px;
+  }
+  
+  .about-card {
+    padding: 28px 24px;
+  }
+  
+  .team-list {
+    gap: 32px;
+    flex-direction: column;
+  }
+  
+  .team-quote {
+    font-size: 13px;
+  }
+  
+  .member-name {
+    font-size: 15px;
+  }
+}
