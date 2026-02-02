@@ -279,7 +279,8 @@
   font-family: "Montserrat", sans-serif;
   font-size: 48px;
   font-weight: 700;
-  color: rgba(0,188,212,0.15);
+  color: #00bcd4;
+  text-shadow: 0 0 15px rgba(0,188,212,0.4);
   margin-bottom: 24px;
   line-height: 1;
   transition: all 0.4s ease;
