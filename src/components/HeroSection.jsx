@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "../components/hero.css";
+import heroVideo from "../assets/News-Vid123.mp4";
 
 const Hero = () => {
   return (
@@ -8,7 +9,7 @@ const Hero = () => {
         <div className="hero-section">
           <div className="video-div">
             <video autoPlay muted loop playsInline>
-              <source src="../src/assets/News-Vid123.mp4" type="video/mp4" />
+              <source src={heroVideo} type="video/mp4" />
             </video>
           </div>
           <div className="vid-cover"></div>

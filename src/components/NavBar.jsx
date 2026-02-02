@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { NavLink, useNavigate, useLocation } from "react-router-dom";
+import logo from "../assets/file.png";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,7 +35,7 @@ const NavBar = () => {
   return (
     <nav>
       <div>
-        <img className="logo-img" src="../src/assets/file.png" alt="logo" />
+        <img className="logo-img" src={logo} alt="logo" />
       </div>
       <div className="hamburger" onClick={toggleMenu}>
         <i className={isOpen ? "fa-solid fa-xmark" : "fa-solid fa-bars"}></i>
