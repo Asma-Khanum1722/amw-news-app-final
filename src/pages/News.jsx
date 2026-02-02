@@ -46,12 +46,14 @@ const News = () => {
 
     try {
       setLoading(true);
-      const url = `https://gnews.io/api/v4/top-headlines?category=${category}&lang=${language}&country=${countryCode}&max=10&apikey=${apiKey}`;
+      // Use our local Vercel serverless function (proxy)
+      // This avoids CORS issues and hides the API key
+      const url = `/api/news?country=${countryCode}`;
       const response = await fetch(url);
       
       if (!response.ok) {
         const errorData = await response.json();
-        throw new Error(errorData.message || "Failed to fetch news");
+        throw new Error(errorData.error || errorData.message || "Failed to fetch news");
       }
 
       const data = await response.json();
@@ -66,6 +68,7 @@ const News = () => {
 
       setArticles(data.articles || []);
     } catch (err) {
+      console.error("Fetch error:", err);
       setError(err.message);
     } finally {
       setLoading(false);
